@@ -1,0 +1,13 @@
+演習のヒント: キー入力の調べ方
+
+右矢印キーが押されているか調べる:
+
+    if (Input.GetKey(KeyCode.RightArrow))
+    {
+        // 押されている間、ここが毎フレーム実行される
+    }
+
+KeyCode の名前: RightArrow / LeftArrow / UpArrow / DownArrow / Space
+
+※ Unity 6 では Project Settings → Player → Other Settings →
+  Active Input Handling を「Both」にしておくこと。
