@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HelloIf : MonoBehaviour
+public class Hello : MonoBehaviour
 {
     void Start()
     {

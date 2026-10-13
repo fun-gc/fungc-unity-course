@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // 補足: 関数の引数と戻り値
-public class HelloArgs : MonoBehaviour
+public class Hello : MonoBehaviour
 {
     void Start()
     {

@@ -7,17 +7,21 @@ FUN GC の Unity 講座「【Unity基礎】オブジェクト指向をC#で学�
 
 | パス | 内容 |
 |---|---|
-| `scripts/Hello.cs` | Start と Update で Debug.Log を表示する |
-| `scripts/HelloMethod.cs` | 関数 `SayHello()` を作って2回呼ぶ |
-| `scripts/HelloIf.cs` | if / else で hp によって表示を分ける |
-| `scripts/HelloArgs.cs` | 補足: 関数の引数と戻り値(Greet / Add / CalcDamage) |
+| `scripts/01_start-update/Hello.cs` | Start と Update で Debug.Log を表示する |
+| `scripts/02_method/Hello.cs` | 関数 `SayHello()` を作って2回呼ぶ |
+| `scripts/03_if/Hello.cs` | if / else で hp によって表示を分ける |
+| `scripts/04_args/Hello.cs` | 補足: 関数の引数と戻り値(Greet / Add / CalcDamage) |
 | `snippets/GetKey.txt` | 演習のヒント(キー入力の調べ方) |
+
+どのフォルダも、講座資料と同じ `Hello.cs`(`class Hello`)です。講座では1つの `Hello.cs` に書き足していくので、
+資料の段階に合わせて**1つずつ、今の `Hello.cs` の中身と置き換えて**使ってください。
+複数の `Hello.cs` を同じプロジェクトに入れると、クラス名が重複してエラーになります。
 
 ## 使い方
 
 1. 自分の Unity プロジェクトを開く。
-2. `scripts/` の `.cs` を Project ウィンドウにドラッグ＆ドロップする。
-3. Hierarchy の Cube にドラッグしてアタッチし、再生する。
+2. 使う段階のフォルダの `Hello.cs` を開き、中身を自分の `Hello.cs` にコピーする(またはドラッグ＆ドロップで置き換える)。
+3. `Hello.cs` が Hierarchy の Cube にアタッチされていることを確認して、再生する。
 
 ## 注意
 
