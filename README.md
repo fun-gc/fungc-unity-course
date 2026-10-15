@@ -1,36 +1,33 @@
-# fungc-unity-course
+# fungc-unity-course: 第2回 カプセル化
 
-FUN GC(ゲーム制作サークル)の Unity 講座で使う教材リポジトリです。
-**Unity プロジェクト本体は含まれていません**。スクリプトなどの教材だけを置いています。
-
+FUN GC の Unity 講座「【Unity基礎】オブジェクト指向をC#で学ぼう」第2回で使う教材です。
+**Unity プロジェクト本体は含まれていません**(スクリプトなどの教材だけです)。
 対象は FUN GC の部員です。
+
+## 中身
+
+| パス | 内容 | 使う場面 |
+|---|---|---|
+| `scripts/00_before/` | 前回の終わりの `Enemy.cs`・`Mover.cs`・`Spawner.cs` | 前回のふりかえり。前回のプロジェクトが無い人はここから |
+| `scripts/01_danger/` | `Enemy.cs`(hp が public)と `GameManager.cs` | 01 なぜデータを守るのか |
+| `scripts/02_private-method/` | hp を private にして `TakeDamage` を作った `Enemy.cs` と `GameManager.cs` | 02 private とメソッドで守る |
+| `scripts/03_property/` | `Hp { get; private set; }` の `Enemy.cs` と `GameManager.cs` | 03 プロパティ |
+| `scripts/04_serialize/Mover.cs` | `[SerializeField] private float speed` の Mover | 04 Unityでのカプセル化 |
+| `scripts/05_exercise/` | 演習のひな型 `Mover.cs`・`Spawner.cs`(TODO を自分で書く) | 05 演習 |
+
+講座の流れの順に番号を付けています。
 
 ## 使い方
 
-- 教材は回ごとに**ブランチ**で分かれています。この `main` には教材は入っていません。
-- 使いたい回のブランチを開いて、スクリプトを自分の Unity プロジェクトにドラッグ＆ドロップして使います。
-- GitHub のブランチ切り替えメニューで回を選ぶか、`git clone -b <ブランチ名>` で取得できます。
-- ファイル名とクラス名は同じにしてください(例: `Hello.cs` なら `class Hello`)。
-
-## ブランチ一覧
-
-ブランチ名は `unity-<シリーズ>-<回>` です。シリーズ名の部分は、シリーズごとに付けます。
-
-| ブランチ | 講座 |
-|---|---|
-| [`unity-base-0`](../../tree/unity-base-0) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第0回 UnityとC#の超入門 |
-| [`unity-base-1`](../../tree/unity-base-1) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第1回 クラスとインスタンス |
-
-講座が近くなったら、順に追加します。
-
-## 講座シリーズ(予定)
-
-1. 【Unity基礎】オブジェクト指向をC#で学ぼう(第0〜5回)
-2. 【Unity基礎】入力・動作・衝突を学ぼう(全3回)
-3. 【Unity基礎】uGUIの表示・操作を学ぼう(全3回)
-4. 【Unity基礎】サウンドとアニメーション(全3回、シリーズ名は未定)
+1. 前回のプロジェクトを開く(キューブの Prefab と Spawner がある状態)。
+2. 使うフォルダの `.cs` を Project ウィンドウにドラッグ＆ドロップする。同じ名前のファイルは「置き換え」になる。
+3. `MonoBehaviour` のスクリプト(`GameManager`、`Mover`、`Spawner`)は GameObject にアタッチする。`Enemy` はアタッチしない。
+4. 同じクラス名のファイルが複数のフォルダにあるので、**1つずつ、今のファイルと置き換えて**使う(同時に入れるとクラスが重複してエラーになる)。
 
 ## 注意
 
+- **ファイル名とクラス名は同じにする**(`Enemy.cs` なら `class Enemy`)。
+- `01_danger`〜`03_property` の `GameManager` は、同じフォルダの `Enemy.cs` と組み合わせて使う。
+- `05_exercise/Spawner.cs` を読み込むと、最初は `m.speed` の行がエラーになる。演習の手順2なので、正しい動きです。
 - 演習の解答例は、講座のあとに別途配布します。
-- 動作確認は Unity 6 を想定しています。
+- Unity 6 で動作確認する想定です。キー入力は `Input.GetKey` を使うので、Project Settings → Player → Other Settings → Active Input Handling を「Both」にしてください。
