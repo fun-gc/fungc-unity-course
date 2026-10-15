@@ -1,35 +1,31 @@
-# fungc-unity-course
+# fungc-unity-course: 第1回 クラスとインスタンス
 
-FUN GC(ゲーム制作サークル)の Unity 講座で使う教材リポジトリです。
-**Unity プロジェクト本体は含まれていません**。スクリプトなどの教材だけを置いています。
-
+FUN GC の Unity 講座「【Unity基礎】オブジェクト指向をC#で学ぼう」第1回で使う教材です。
+**Unity プロジェクト本体は含まれていません**(スクリプトなどの教材だけです)。
 対象は FUN GC の部員です。
+
+## 中身
+
+| パス | 内容 | 使う場面 |
+|---|---|---|
+| `scripts/00_mover/Mover.cs` | 前回の Mover.cs の完成形 | 演習のキューブに付ける。前回が終わらなかった人向け |
+| `scripts/01_enemy-class/Enemy.cs` | Enemy クラス(フィールドとメソッド) | 01 クラスは「設計図」 |
+| `scripts/02_new/GameManager.cs` | new でインスタンスを作って使う | 02 new でインスタンスを作る |
+| `scripts/03_prefab/Spawner.cs` | スペースキーで Prefab から実物を増やす | 03 Unityの中のクラス |
+| `scripts/04_exercise/Spawner.cs` | 演習のひな型(手順4の TODO を自分で書く) | 04 演習 |
+
+講座の流れの順に番号を付けています。上から順に読めば、第1回の最初から最後までのコードが見られます。
 
 ## 使い方
 
-- 教材は回ごとに**ブランチ**で分かれています。この `main` には教材は入っていません。
-- 使いたい回のブランチを開いて、スクリプトを自分の Unity プロジェクトにドラッグ＆ドロップして使います。
-- GitHub のブランチ切り替えメニューで回を選ぶか、`git clone -b <ブランチ名>` で取得できます。
-- ファイル名とクラス名は同じにしてください(例: `Hello.cs` なら `class Hello`)。
-
-## ブランチ一覧
-
-ブランチ名は `unity-<シリーズ>-<回>` です。シリーズ名の部分は、シリーズごとに付けます。
-
-| ブランチ | 講座 |
-|---|---|
-| [`unity-base-0`](../../tree/unity-base-0) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第0回 UnityとC#の超入門 |
-
-講座が近くなったら、順に追加します。
-
-## 講座シリーズ(予定)
-
-1. 【Unity基礎】オブジェクト指向をC#で学ぼう(第0〜5回)
-2. 【Unity基礎】入力・動作・衝突を学ぼう(全3回)
-3. 【Unity基礎】uGUIの表示・操作を学ぼう(全3回)
-4. 【Unity基礎】サウンドとアニメーション(全3回、シリーズ名は未定)
+1. 自分の Unity プロジェクトを開く(前回のキューブを使います)。
+2. 使うフォルダの `.cs` を Project ウィンドウにドラッグ＆ドロップする。
+3. `MonoBehaviour` のスクリプト(`Mover`、`GameManager`、`Spawner`)は GameObject にアタッチする。`Enemy` はアタッチしない。
+4. `Spawner` は、`03_prefab` と `04_exercise` のどちらか**1つだけ**を入れる(クラス名が重複するため)。演習では `03_prefab` の `Spawner.cs` を `04_exercise` のもので置き換える。
 
 ## 注意
 
+- **ファイル名とクラス名は同じにする**(`Enemy.cs` なら `class Enemy`)。
+- `GameManager` を使うときは、`Enemy.cs` も同じプロジェクトに入れておく。
 - 演習の解答例は、講座のあとに別途配布します。
-- 動作確認は Unity 6 を想定しています。
+- Unity 6 で動作確認する想定です。キー入力は `Input.GetKey` を使うので、Project Settings → Player → Other Settings → Active Input Handling を「Both」にしてください。
