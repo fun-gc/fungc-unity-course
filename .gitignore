@@ -107,3 +107,9 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# --- FUN GC 講座用の追加(このリポジトリには Unity プロジェクト本体を入れない) ---
+/Assets/
+/ProjectSettings/
+/Packages/
+*.meta
