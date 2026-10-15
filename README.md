@@ -11,7 +11,7 @@ FUN GC の Unity 講座「【Unity基礎】オブジェクト指向をC#で学�
 | `scripts/02_method/Hello.cs` | 関数 `SayHello()` を作って2回呼ぶ |
 | `scripts/03_if/Hello.cs` | if / else で hp によって表示を分ける |
 | `scripts/04_args/Hello.cs` | 補足: 関数の引数と戻り値(Greet / Add / CalcDamage) |
-| `scripts/05_mover/Mover.cs` | 演習のひな型(TODO を自分で埋める。解答例は講座のあとに配布) |
+| `scripts/05_mover/Mover.cs` | 演習のひな型(速さの変数とキー判定を自分で書く。動かす部分は用意済み。解答例は講座のあとに配布) |
 | `snippets/GetKey.txt` | 演習のヒント(キー入力の調べ方) |
 
 `01`〜`04` のフォルダは、講座資料と同じ `Hello.cs`(`class Hello`)です。`05_mover` は演習用の別ファイル `Mover.cs` で、`Hello.cs` とは別に使います。講座では1つの `Hello.cs` に書き足していくので、
