@@ -21,6 +21,7 @@ FUN GC(ゲーム制作サークル)の Unity 講座で使う教材リポジト�
 | [`unity-base-0`](../../tree/unity-base-0) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第0回 UnityとC#の超入門 |
 | [`unity-base-1`](../../tree/unity-base-1) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第1回 クラスとインスタンス |
 | [`unity-base-2`](../../tree/unity-base-2) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第2回 カプセル化 |
+| [`unity-base-3`](../../tree/unity-base-3) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第3回 継承 |
 
 講座が近くなったら、順に追加します。
 
