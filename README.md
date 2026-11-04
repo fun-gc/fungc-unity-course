@@ -24,6 +24,7 @@ FUN GC(ゲーム制作サークル)の Unity 講座で使う教材リポジト�
 | [`unity-base-3`](../../tree/unity-base-3) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第3回 継承 |
 | [`unity-base-4`](../../tree/unity-base-4) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第4回 ポリモーフィズムとインターフェース |
 | [`unity-physics-1`](../../tree/unity-physics-1) | 【Unity基礎】入力・動作・衝突を学ぼう 第1回 オブジェクトを動かす |
+| [`unity-physics-2`](../../tree/unity-physics-2) | 【Unity基礎】入力・動作・衝突を学ぼう 第2回 物理的に動く、ぶつかる |
 
 講座が近くなったら、順に追加します。
 
