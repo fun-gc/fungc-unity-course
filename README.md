@@ -26,6 +26,7 @@ FUN GC(ゲーム制作サークル)の Unity 講座で使う教材リポジト�
 | [`unity-physics`](../../tree/unity-physics) | [`lesson1`](../../tree/unity-physics/lesson1) | 【Unity基礎】入力・動作・衝突を学ぼう 第1回 オブジェクトを動かす |
 | [`unity-physics`](../../tree/unity-physics) | [`lesson2`](../../tree/unity-physics/lesson2) | 同 第2回 物理的に動く、ぶつかる |
 | [`unity-physics`](../../tree/unity-physics) | [`lesson3`](../../tree/unity-physics/lesson3) | 同 第3回 衝突したら何かが起きる |
+| [`unity-ugui`](../../tree/unity-ugui) | [`lesson1`](../../tree/unity-ugui/lesson1) | 【Unity基礎】uGUIの表示・操作を学ぼう 第1回 画面を組み立てよう |
 
 講座が近くなったら、順に追加します。
 
