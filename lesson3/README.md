@@ -43,13 +43,14 @@ ShopManager の Items に入力します。授業では上から5〜8個で十�
 2. ショップ用の Panel を作り、その中に UI ＞ Scroll View を置く。Content に Vertical Layout Group と Content Size Fitter(Vertical Fit = Preferred Size)を付ける。
 3. 1行分の UI(名前と価格の Text (TMP)、購入ボタン)を組み、Project ウィンドウにドラッグして Prefab にする。Hierarchy に残った行は削除する。
 4. スクリプトを Project ウィンドウにドラッグ＆ドロップする。**ShopManager と MenuManager は Canvas に**、ShopRow は**行の Prefab に**(Prefab をダブルクリックして開いてから)付ける。ShopManager をショップパネルに付けると、最初に開くまで行が作られない。
-5. **同じ名前のファイルは、1つずつ今のファイルと置き換えて**使う(同時に入れるとクラスが重複してエラーになる)。置き換えるときは、プロジェクトに残っている同名のファイルを**先に削除**してから入れる。
+5. **同じ名前のファイルは、新しく入れずに、今のファイルの中身を書き換えて**使う(同じ名前のファイルを2つ入れるとクラスが重複してエラーになる)。
+   - Project ウィンドウで今のファイルをダブルクリックしてエディタで開き、中身を全部選択して、新しい段階のファイルの中身に貼り替えて保存する。
+   - ファイルを削除して入れ直すと、Inspector の欄(Items の入力、Row Prefab、Content など)と On Click の登録が消えるので、削除はしない。
    - `ShopManager.cs`: 01〜04・07
    - `ShopRow.cs`: 02〜04・07
    - `MenuManager.cs`: 05・06
-   - `Item.cs`: 01〜04・07(中身はすべて同じなので、置き換えなくてよい)
-   - 削除すると、欄の接続や On Click の登録が外れることがある。付け直したら確認する。
-6. 演習(`07_exercise`)は、03 の ShopManager.cs と ShopRow.cs を削除してから入れる。MenuManager は 05 か 06 のものをそのまま使う。
+   - `Item.cs`: 01〜04・07(中身はすべて同じなので、書き換えなくてよい)
+6. 演習(`07_exercise`)は、ShopManager.cs と ShopRow.cs の中身を書き換える。MenuManager は 05 か 06 のものをそのまま使う。
 
 ## 注意
 

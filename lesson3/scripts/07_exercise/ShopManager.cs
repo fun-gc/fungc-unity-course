@@ -4,7 +4,7 @@ using TMPro;
 
 // 演習: ショップ画面を完成させよう
 // ゴール: 3つの画面が1つのメニューにつながり、ショップで買い物ができる
-// 準備: 03 の ShopManager.cs と ShopRow.cs を削除してから、このフォルダの2つを入れる(Item.cs は同じ)。
+// 準備: 今の ShopManager.cs と ShopRow.cs の中身を、このフォルダの2つの中身に書き換える(Item.cs は同じ)。
 //       ショップパネルに所持金の Text (TMP) を置き、moneyText にドラッグする。
 //       MenuManager は 05 か 06 のものをそのまま使う。
 // TODO 1(このファイル)と TODO 2(ShopRow.cs)を自分で書こう(答えは講座の最後に見る)
