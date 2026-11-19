@@ -1,45 +1,23 @@
-# fungc-unity-course
+# fungc-unity-course: サウンドとアニメーション
 
-FUN GC(ゲーム制作サークル)の Unity 講座で使う教材リポジトリです。
-**Unity プロジェクト本体は含まれていません**。スクリプトなどの教材だけを置いています。
-
+FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション」(シリーズ名は仮)で使う教材です。
+**Unity プロジェクト本体は含まれていません**(スクリプトなどの教材だけです)。
 対象は FUN GC の部員です。
 
-## 使い方
+## 回ごとのフォルダ
 
-- 教材は**シリーズごと**に**ブランチ**で分かれています。この `main` には教材は入っていません。
-- 使いたいシリーズのブランチを開き、その中の回のフォルダ(`lesson1` など)からスクリプトを自分の Unity プロジェクトにドラッグ＆ドロップして使います。
-- GitHub のブランチ切り替えメニューでシリーズを選ぶか、`git clone -b <ブランチ名>` で取得できます。
-- ファイル名とクラス名は同じにしてください(例: `Hello.cs` なら `class Hello`)。
+| フォルダ | 講座 |
+|---|---|
+| [`lesson1`](lesson1) | 第1回 音を鳴らそう |
 
-## ブランチ一覧
-
-ブランチ名は `unity-<シリーズ>` です。回ごとのフォルダは `lesson<回>` です。
-
-| ブランチ | フォルダ | 講座 |
-|---|---|---|
-| [`unity-base`](../../tree/unity-base) | [`lesson0`](../../tree/unity-base/lesson0) | 【Unity基礎】オブジェクト指向をC#で学ぼう 第0回 UnityとC#の超入門 |
-| [`unity-base`](../../tree/unity-base) | [`lesson1`](../../tree/unity-base/lesson1) | 同 第1回 クラスとインスタンス |
-| [`unity-base`](../../tree/unity-base) | [`lesson2`](../../tree/unity-base/lesson2) | 同 第2回 カプセル化 |
-| [`unity-base`](../../tree/unity-base) | [`lesson3`](../../tree/unity-base/lesson3) | 同 第3回 継承 |
-| [`unity-base`](../../tree/unity-base) | [`lesson4`](../../tree/unity-base/lesson4) | 同 第4回 ポリモーフィズムとインターフェース |
-| [`unity-physics`](../../tree/unity-physics) | [`lesson1`](../../tree/unity-physics/lesson1) | 【Unity基礎】入力・動作・衝突を学ぼう 第1回 オブジェクトを動かす |
-| [`unity-physics`](../../tree/unity-physics) | [`lesson2`](../../tree/unity-physics/lesson2) | 同 第2回 物理的に動く、ぶつかる |
-| [`unity-physics`](../../tree/unity-physics) | [`lesson3`](../../tree/unity-physics/lesson3) | 同 第3回 衝突したら何かが起きる |
-| [`unity-ugui`](../../tree/unity-ugui) | [`lesson1`](../../tree/unity-ugui/lesson1) | 【Unity基礎】uGUIの表示・操作を学ぼう 第1回 画面を組み立てよう |
-| [`unity-ugui`](../../tree/unity-ugui) | [`lesson2`](../../tree/unity-ugui/lesson2) | 同 第2回 部品を操作しよう |
-| [`unity-ugui`](../../tree/unity-ugui) | [`lesson3`](../../tree/unity-ugui/lesson3) | 同 第3回 画面を動かそう |
-
-講座が近くなったら、順に追加します。
-
-## 講座シリーズ(予定)
-
-1. 【Unity基礎】オブジェクト指向をC#で学ぼう(第0〜5回)
-2. 【Unity基礎】入力・動作・衝突を学ぼう(全3回)
-3. 【Unity基礎】uGUIの表示・操作を学ぼう(全3回)
-4. 【Unity基礎】サウンドとアニメーション(全3回、シリーズ名は未定)
+各フォルダに、その回の `README.md`(中身と使い方)、`scripts/`(スクリプト)、講座のスライド(PDF)が入っています。
+使いたい回のフォルダを開いて、スクリプトを自分の Unity プロジェクトにドラッグ＆ドロップして使います。
+第2回・第3回は、講座が近くなったら追加します。
 
 ## 注意
 
+- ファイル名とクラス名は同じにしてください(例: `SePlayer.cs` なら `class SePlayer`)。
+- 同じ名前のファイルは、段階ごとに今のファイルの中身を書き換えて使います(詳しくは各回の README)。
+- 音のファイルなどの素材は入っていません。用意の仕方は各回の README の「使う素材」を見てください。
 - 演習の解答例は、講座のあとに別途配布します。
-- 動作確認は Unity 6 を想定しています。
+- 動作確認は Unity 6 を想定しています(まだ実機確認はしていません)。
