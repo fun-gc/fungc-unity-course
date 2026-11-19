@@ -13,7 +13,7 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 | `scripts/02_play-vs-oneshot/SePlayer.cs` | Play と PlayOneShot を入れ替えて連打を比べる体験用(今は Play が有効) | 02 スペースキーを連打すると、音が違う |
 | `scripts/03_jump-se/SePlayer.cs` | PlayOneShot でジャンプ音を鳴らす版(jumpClip) | 02 効果音は PlayOneShot で重ねる |
 | `scripts/04_destroy-ng/Coin.cs` | わざとコイン自身の Audio Source で鳴らして Destroy する版(音が途中で切れる) | 02 よくあるつまずき:コインと一緒に音が消える |
-| `scripts/05_coin/Coin.cs` | ぶつかったら SePlayer の Audio Source で鳴らして、コインを消す | 00 完成版を動かそう / 04 解答例:コインに触れたら鳴らす |
+| `scripts/05_coin/Coin.cs` | ぶつかったら SePlayer の Audio Source で鳴らして、コインを消す | 02 よくあるつまずき:コインと一緒に音が消える / 04 解答例:コインに触れたら鳴らす |
 | `scripts/06_exercise/` | 演習のひな型(Coin.cs の TODO 1、SePlayer.cs の TODO 2 を自分で書く) | 04 演習 |
 
 講座の流れの順に番号を付けています。上から順に読めば、第1回の最初から最後までのコードが見られます。
@@ -40,7 +40,7 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 
 - **ファイル名とクラス名は同じにする**(`SePlayer.cs` なら `class SePlayer`)。
 - スクリプトを付けた欄(source、seSource、coinClip など)を空(None)のまま再生すると、Console に NullReferenceException が出る。Audio Clip が空の Audio Source は、エラーなしで何も鳴らない。
-- 音が鳴らないときは、Audio Clip が入っているか、Audio Source の Mute と Volume、Game ビューの Mute Audio、Main Camera の Audio Listener(シーンに1つ)、PC の音量を確認する。
+- 音が鳴らないときは、Audio Clip が入っているか、Audio Source の Mute と Volume、Game ビューの Mute Audio、Main Camera の Audio Listener(シーンに1つ。チェックが入っているか)、PC の音量を確認する。
 - 効果音用の SePlayer は Play On Awake を OFF にする(ON のままだと開始と同時に鳴る)。
 - `04_destroy-ng` は**わざと**うまく動かない形です。エラーは出ませんが、音が途中で切れます(05 に置き換えると直ります)。コインに Audio Source を付けて Audio Clip を入れておく必要があります。
 - ぶつかったことを受け取るには、両方に Collider、どちらか(動く側)に Rigidbody が必要で、Is Trigger は OFF。
