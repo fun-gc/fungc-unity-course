@@ -13,11 +13,10 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 | `scripts/02_play-vs-oneshot/SePlayer.cs` | Play と PlayOneShot を入れ替えて連打を比べる体験用(今は Play が有効) | 02 スペースキーを連打すると、音が違う |
 | `scripts/03_jump-se/SePlayer.cs` | PlayOneShot でジャンプ音を鳴らす版(jumpClip) | 02 効果音は PlayOneShot で重ねる |
 | `scripts/04_destroy-ng/Coin.cs` | わざとコイン自身の Audio Source で鳴らして Destroy する版(音が途中で切れる) | 02 よくあるつまずき:コインと一緒に音が消える |
-| `scripts/05_coin/Coin.cs` | ぶつかったら SePlayer の Audio Source で鳴らして、コインを消す | 02 よくあるつまずき:コインと一緒に音が消える / 04 解答例:コインに触れたら鳴らす |
-| `scripts/06_exercise/` | 演習のひな型(Coin.cs の TODO 1、SePlayer.cs の TODO 2 を自分で書く) | 04 演習 |
+| `scripts/05_exercise/` | 演習のひな型(Coin.cs の TODO 1、SePlayer.cs の TODO 2 を自分で書く) | 04 演習 |
 
 講座の流れの順に番号を付けています。上から順に読めば、第1回の最初から最後までのコードが見られます。
-01〜03 は SePlayer.cs、04〜06 は Coin.cs が同名です。
+01〜03 は SePlayer.cs、04・05 は Coin.cs が同名です。
 
 ## 使う素材
 
@@ -32,9 +31,9 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 4. **同じ名前のファイルは、新しく入れずに、今のファイルの中身を書き換えて**使う(同名を2つ入れるとクラスが重複してエラーになる)。
    - Project ウィンドウで今のファイルをダブルクリックして開き、中身を全部選択して、新しい段階のファイルの中身に貼り替えて保存する。
    - ファイルを削除して入れ直すと、Inspector の欄にドラッグした中身も消えるので、削除はしない。
-   - `SePlayer.cs`: 01・02・03・06。`Coin.cs`: 04・05・06。
+   - `SePlayer.cs`: 01・02・03・05。`Coin.cs`: 04・05。
    - 変数名が変わる所(clip → jumpClip)は、書き換えたあとの欄にもう一度ドラッグする。
-5. 演習(`06_exercise`)は、Coin.cs と SePlayer.cs の2つの中身を書き換えて使う。
+5. 演習(`05_exercise`)は、Coin.cs と SePlayer.cs の2つの中身を書き換えて使う。
 
 ## 注意
 
@@ -42,9 +41,9 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 - スクリプトを付けた欄(source、seSource、coinClip など)を空(None)のまま再生すると、Console に NullReferenceException が出る。Audio Clip が空の Audio Source は、エラーなしで何も鳴らない。
 - 音が鳴らないときは、Audio Clip が入っているか、Audio Source の Mute と Volume、Game ビューの Mute Audio、Main Camera の Audio Listener(シーンに1つ。チェックが入っているか)、PC の音量を確認する。
 - 効果音用の SePlayer は Play On Awake を OFF にする(ON のままだと開始と同時に鳴る)。
-- `04_destroy-ng` は**わざと**うまく動かない形です。エラーは出ませんが、音が途中で切れます(05 に置き換えると直ります)。コインに Audio Source を付けて Audio Clip を入れておく必要があります。
+- `04_destroy-ng` は**わざと**うまく動かない形です。エラーは出ませんが、音が途中で切れます。直し方はスライドの OK 側のとおりで、演習で自分で書きます。コインに Audio Source を付けて Audio Clip を入れておく必要があります。
 - ぶつかったことを受け取るには、両方に Collider、どちらか(動く側)に Rigidbody が必要で、Is Trigger は OFF。
 - `02_play-vs-oneshot` は、コードのコメントのとおりに A と B を入れ替えて試す。
-- `06_exercise` は TODO を自分で書くひな型。そのままでもコンパイルは通るが、コインに触れても何も起きず(消えない)、ジャンプ音も鳴らない。
+- `05_exercise` は TODO を自分で書くひな型。そのままでもコンパイルは通るが、コインに触れても何も起きず(消えない)、ジャンプ音も鳴らない。
 - 演習の解答例は、講座のあとに別途配布します。
 - Unity 6.3 を想定していますが、動作確認はまだしていません。
