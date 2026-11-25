@@ -19,7 +19,7 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        // 入力は Update で読む(第1・2回と同じ)
+        // 入力は Update で読む(「入力・動作・衝突」第1・2回と同じ)
         var kb = Keyboard.current;
         x = 0f;
         z = 0f;

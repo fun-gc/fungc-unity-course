@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// 第2回の Mover の rb を、GetComponent で自分から取り出す形にしたもの。
+// 「入力・動作・衝突」第2回の Mover の rb を、GetComponent で自分から取り出す形にしたもの(同シリーズ第3回の完成形)。
 // rb 欄にドラッグしなくても動く(rb 欄は Inspector から消える)。
 public class Mover : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        // 入力は Update で読む(第1・2回と同じ)
+        // 入力は Update で読む(「入力・動作・衝突」第1・2回と同じ)
         var kb = Keyboard.current;
         x = 0f;
         z = 0f;
