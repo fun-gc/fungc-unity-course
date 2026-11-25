@@ -13,7 +13,7 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 | `scripts/02_play-vs-oneshot/SePlayer.cs` | Play と PlayOneShot を入れ替えて連打を比べる体験用(今は Play が有効) | 02 スペースキーを連打すると、音が違う |
 | `scripts/03_jump-se/SePlayer.cs` | PlayOneShot でジャンプ音を鳴らす版(jumpClip) | 02 効果音は PlayOneShot で重ねる |
 | `scripts/04_destroy-ng/Coin.cs` | わざとコイン自身の Audio Source で鳴らして Destroy する版(音が途中で切れる) | 02 よくあるつまずき:コインと一緒に音が消える |
-| `scripts/05_exercise/` | 演習のひな型(Coin.cs の TODO 1、SePlayer.cs の TODO 2 を自分で書く) | 04 演習 |
+| `scripts/05_exercise/` | 演習のひな型(欄の宣言から自分で書く。Coin.cs の TODO 1・2、SePlayer.cs の TODO 3・4) | 04 演習 |
 
 講座の流れの順に番号を付けています。上から順に読めば、第1回の最初から最後までのコードが見られます。
 01〜03 は SePlayer.cs、04・05 は Coin.cs が同名です。
@@ -44,6 +44,6 @@ FUN GC の Unity 講座「【Unity基礎】サウンドとアニメーション�
 - `04_destroy-ng` は**わざと**うまく動かない形です。エラーは出ませんが、音が途中で切れます。直し方はスライドの OK 側のとおりで、演習で自分で書きます。コインに Audio Source を付けて Audio Clip を入れておく必要があります。
 - ぶつかったことを受け取るには、両方に Collider、どちらか(動く側)に Rigidbody が必要で、Is Trigger は OFF。
 - `02_play-vs-oneshot` は、コードのコメントのとおりに A と B を入れ替えて試す。
-- `05_exercise` は TODO を自分で書くひな型。そのままでもコンパイルは通るが、コインに触れても何も起きず(消えない)、ジャンプ音も鳴らない。
+- `05_exercise` は TODO を自分で書くひな型。欄(フィールド)の宣言も自分で書くので、最初は Inspector に欄が出ない。そのままでもコンパイルは通るが、コインに触れても何も起きず(消えない)、ジャンプ音も鳴らない。
 - 演習の解答例は、講座のあとに別途配布します。
 - Unity 6.3 を想定していますが、動作確認はまだしていません。
